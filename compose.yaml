@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: bitnami/postgresql
+    container_name: order-microservice
+    environment:
+      POSTGRES_DB: order-microservice
+      POSTGRES_USER: gus
+      POSTGRES_PASSWORD: pass
+    volumes:
+      - /var/data/order_pg:/var/lib/postgresql/data
+    ports:
+      - "5000:5432"
+
+volumes:
+  order_pg:
