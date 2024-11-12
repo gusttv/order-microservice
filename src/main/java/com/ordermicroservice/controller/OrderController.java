@@ -41,7 +41,6 @@ public class OrderController {
         return ResponseEntity.ok(orders);
     }
 
-    // {} json do id
     @GetMapping("/{id}")
     public ResponseEntity<Optional<Order>> getOrderById(@PathVariable("id") String id) {
         Optional<Order> order = orderService.getOrderById(id);
