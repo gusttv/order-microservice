@@ -1,6 +1,3 @@
-Aqui está o `README.md` para o seu projeto `order-microservice`, seguindo o modelo solicitado:
-
-```markdown
 ## Microsserviço de Pedidos
 
 Este microserviço de pedidos faz parte de:
